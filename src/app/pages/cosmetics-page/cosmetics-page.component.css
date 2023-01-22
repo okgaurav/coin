@@ -1,0 +1,37 @@
+.main {
+    margin-left: 160px;
+    margin-top: 11vh;
+    /* Same as the width of the sidenav */
+    font-size: 16px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.container-top{
+    min-height: 40vh;
+    background-image: radial-gradient(circle, #9c776d, #98746a, #957067, #916d65, #8e6a62, #89665e, #856159, #805d55, #79574f, #725048, #6b4a42, #64443c);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-top: 2vh;
+}
+.container-bottom{
+    background-color: #F1E8D7;
+    min-height: 45vh;
+}
+.random{
+    min-height: 10vh;
+    min-width: 150px;
+    color: red;
+}
+.page_adv{
+    min-height: 35vh;
+    background-color: aqua;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    
+}
+.page_adv img{
+    max-height: 36vh;
+    width: 85.6vw;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}

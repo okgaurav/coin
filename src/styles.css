@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: primary-md;
+    src: url(assets/fonts/Poppins-Medium.ttf) format("opentype");
+}
+@font-face {
+    font-family: primary-regular;
+    src: url(assets/fonts/Poppins-Regular.ttf) format("opentype");
+}
+@font-face {
+    font-family: secondry-md;
+    src: url(assets/fonts/ZillaSlab-Medium.ttf) format("opentype");
+}
+@font-face {
+    font-family: secondry-regular;
+    src: url(assets/fonts/ZillaSlab-Regular.ttf) format("opentype");
+}
+@font-face {
+    font-family: secondry-bold;
+    src: url(assets/fonts/ZillaSlab-Bold.ttf) format("opentype");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'primary-regular', 'secondry-regular',sans-serif;
+}

@@ -16,9 +16,5 @@ export class BaseTemplateComponent implements OnInit {
     this.primengConfig.ripple = true;
     console.log("In Base Page");
   }
-  @ViewChild('videoPlayer') videoplayer: any;
 
-  toggleVideo() {
-      this.videoplayer.play();
-  }
 }

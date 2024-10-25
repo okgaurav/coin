@@ -2,38 +2,36 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { BaseModule } from './modules/base.module';
 import { RouterModule } from '@angular/router';
 import { FirstpageComponent } from './pages/firstpage/firstpage.component';
-import { NgModule, enableProdMode } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BaseTemplateComponent } from './pages/base-template.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CosmeticsPageComponent } from './pages/cosmetics-page/cosmetics-page.component';
-import { CosmeticsSingleComponent } from './pages/cosmetics-single/cosmetics-single.component';
-import { ElectronicsComponent } from './pages/electronics/electronics.component';
-import { ArtsComponent } from './pages/arts/arts.component';
+import {ChipsModule} from "primeng/chips";
+import {CalendarModule} from "primeng/calendar";
+import {DropdownModule} from "primeng/dropdown";
+import {DatePipe} from "@angular/common";
+import DateFormatPipe from "./date-format.pipe";
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
     FirstpageComponent,
-    BaseTemplateComponent,
-    CosmeticsPageComponent,
-    CosmeticsSingleComponent,
-    ElectronicsComponent,
-    ArtsComponent,
-    
+    BaseTemplateComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
     NgbModule,
-    BaseModule
-    
+    BaseModule,
+    ChipsModule,
+    CalendarModule,
+    DropdownModule,
   ],
-  providers: [],
+  providers: [DateFormatPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

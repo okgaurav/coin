@@ -1,57 +1,57 @@
 <div class="container-fluid container-top">
-    <div class="row container-top-in">
-        <div class="header-main-left col">
-            <div class="header-main-left-header">Clear your closet,<br> fill your wallet: our sale is on!</div>
-            <hr class="head1">
-            <div class="row flex-container" style="margin-left:5vw; margin-right: 5vw;">
-                <div class="col semi-box" id="cf4a">
-                    <!-- <img src="../../assets/images/cosmetics_2.png" alt="logo"> -->
-                    <a routerLink="/app/cosmetics" routerLinkActive="active" ariaCurrentWhenActive="page">
-                        <img src="../../assets/videos/vid1.1.gif" alt="Cosmetics">
-                    </a>
-                </div>
-                <div class="col semi-box">
-                    <!-- <img src="../../assets/images/cosmetics_2.png" alt="logo"> -->
-                    <a routerLink="/app/electronics" routerLinkActive="active" ariaCurrentWhenActive="page">
-                        <img src="../../assets/videos/vid2.gif" alt="Electronics">
-                    </a>
-                </div>
-                <div class="col semi-box">
-                    <!-- <img src="../../assets/images/cosmetics_2.png" alt="logo"> -->
-                    <a routerLink="/app/arts" routerLinkActive="active" ariaCurrentWhenActive="page">
-                        <img src="../../assets/videos/vid3.gif" alt="Conceptual Arts">
-                    </a>    
-                </div>
-            </div>
-            
+  <div class="row container-top-in">
+    <div class="header-main-left col">
+      <div class="header-main-left-header">Stand By,<br> Results are on the way!</div>
+      <hr class="head1">
+      <div class="row flex-container" style="margin-left:5vw; margin-right: 5vw;">
+      </div>
+        <div class="ms-5">
+        <div class="row">
+          <div class ="col data-1">Minimum Value</div>
+          <div class ="col data-2">{{response.minValue}}</div>
         </div>
-        <div class="header-main-right col">
-            <div class="video">
-                <img src="../../assets/videos/vid8.gif"/>
-                </div>
-            <hr class="head1">
-            <h2 style="text-align: center;">Sale is Live!</h2>
+        <div class="row">
+          <div class="col data-1">Maximum Value</div>
+          <div class="col data-2">{{response.maxValue}}</div>
+        </div>
+        <div class="row">
+          <div class="col data-1">Currency</div>
+          <div class="col data-2">{{response.currency}}</div>
+        </div>
+        </div>
 
-        </div>
     </div>
-</div>
-<div class="container-fluid container-bottom">
-    <div class="row">
-        <div class=" col random">Gaurav Verma</div>
-        <div class=" col random">Gaurav</div>
-        <div class=" col random">Gaurav</div>
-        <div class=" col random">Gaurav</div>
+    <div class="header-main-right col">
+      <hr class="head1">
+      <h5 style="text-align: center;">Sale is Live!</h5>
+      <div class="card " style="background-color: #0ceef1">
+        <form [formGroup]="currencyForm" (ngSubmit)="onSubmit()">
+          <div class="p-field p-3 m-1" style="align-content: center">
+            <label for="startDate" class="pe-3">Start Date</label>
+            <p-calendar id="startDate" selectionMode="single" formControlName="startDate" placeholder="Start Date"></p-calendar>
+          </div>
+          <div class="p-field p-3 m-1">
+            <label for="endDate" class="pe-3">Start Date</label>
+            <p-calendar id="endDate" selectionMode="single" formControlName="endDate" placeholder="End Date"></p-calendar>
+          </div>
+          <div class="p-field p-3 m-1" style="align-content: end">
+            <p-dropdown
+              class="pe-3"
+              [options]="currencyOptions"
+              formControlName="currency"
+              optionLabel="name"
+              placeholder="Select a currency">
+            </p-dropdown>
+          </div>
+          <div class="submit">
+          <button pButton type="submit" label="Submit" class="submit"></button>
+          </div>
+        </form>
+      </div>
+
+
     </div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
-    <div class="random">Gaurav</div>
+  </div>
+  <div class="container-fluid container-bottom">
+  </div>
 </div>
